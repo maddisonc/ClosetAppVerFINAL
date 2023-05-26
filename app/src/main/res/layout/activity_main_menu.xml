@@ -5,6 +5,8 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9E2D5"
+    android:backgroundTint="#D9E2D5"
     tools:context=".mainMenu">
 
     <TextView
@@ -13,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Olivia's Closet"
+        android:textColor="#3E6765"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
+        android:backgroundTint="#FFFFFF"
         android:text="Start"
+        android:textColor="#3E6765"
+        android:textColorLink="#5E2C2C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -35,7 +41,9 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="160dp"
+        android:backgroundTint="#FFFFFF"
         android:text="Color Theory"
+        android:textColor="#3E6765"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startBtn" />
@@ -47,7 +55,9 @@
         android:layout_marginStart="141dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="141dp"
+        android:backgroundTint="#FFFFFF"
         android:text="Dress Codes"
+        android:textColor="#3E6765"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toColorTheoryBtn" />
