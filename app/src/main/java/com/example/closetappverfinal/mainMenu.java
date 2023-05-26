@@ -56,7 +56,7 @@ public class mainMenu extends AppCompatActivity {
 
     public void configureDressCodesButton ()
     {
-        Intent intent = new Intent(this, dressCodesScreen.class);
+        Intent intent = new Intent(this, learnAboutDressCodesCC.class);
         startActivity(intent);
     } // end start button handler
 
