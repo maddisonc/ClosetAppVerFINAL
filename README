@@ -1,2 +1,11 @@
 Title: Closet App/"Olivia's Closet" (4/23-5/23)
-This is my 2023 final for my high school Advanced Java class.  I built an app that takes in clothing items, suggests items within a stored set based on the user's desired attributes (weather type, level of formality, and color), and informs users of color theory and common dress codes.  This assignment required the implementation of six of the following: CSS (styling), a Kanban board, unit tests, RegEx, branching for each new feature, database usage, and a New Android Studio element.
+This is my 2023 final for my high school Advanced Java class.  I built an app that takes in clothing items, suggests items within a stored set based on the user's desired attributes (weather type, level of formality, and color), and informs users of color theory and common dress codes.  This assignment required the implementation of six of the following: CSS (styling), a Kanban board, unit tests, RegEx, branching for each new feature, database usage, and a New Android Studio element.  Through this project, I learned the new skills of implementing RecyclerViews and allowing the user to upload images through links.
+
+Video: https://drive.google.com/file/d/1kL6CAtsP4MYqN8KFheMqrA3uHVVFct9p/view?usp=sharing
+
+Resources: 
+1) https://uibakery.io/regex-library/url
+2) https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie
+3) https://www.youtube.com/watch?v=cgMFr-fXIbw
+4) https://www.youtube.com/watch?v=x-2qtxmxYE8
+5) https://www.youtube.com/watch?v=V1uxaRfSqu8
