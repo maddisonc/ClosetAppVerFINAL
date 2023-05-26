@@ -11,23 +11,23 @@ import android.widget.TextView;
 public class dressCodesScreen extends AppCompatActivity {
 
     // https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie
-    private Button mainMenuBtn;
-    private Button dressCodesOutputBtn;
+    private Button menuBtn;
+    private Button dressCodesBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dress_codes_screen);
-        mainMenuBtn = findViewById(R.id.mainMenuBtn);
-        mainMenuBtn.setOnClickListener(new View.OnClickListener() {
+        menuBtn = findViewById(R.id.mainMenuBtn);
+        menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 configureMainMenuButton();
             }
         }); // next activity method
 
-        dressCodesOutputBtn = findViewById(R.id.dressCodesOutputBtn);
-        dressCodesOutputBtn.setOnClickListener(new View.OnClickListener() {
+        dressCodesBtn = findViewById(R.id.outputBtn);
+        dressCodesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 configureDressCodesButton();
