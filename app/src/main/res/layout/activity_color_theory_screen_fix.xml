@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D6F6C7"
     tools:context=".inputScreen">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Color Theory"
+        android:textColor="#3E6765"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +28,7 @@
         android:layout_marginStart="162dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="162dp"
+        android:backgroundTint="#3E6765"
         android:text="Back to Main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +41,7 @@
         android:layout_marginTop="24dp"
         android:text="Pick a color to view its complimentary color!:"
         android:textAlignment="center"
+        android:textColor="#3E6765"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
         android:layout_marginTop="57dp"
+        android:backgroundTint="#3E6765"
         android:text="Red"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/colorText" />
@@ -60,6 +65,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="57dp"
         android:layout_marginEnd="29dp"
+        android:backgroundTint="#3E6765"
         android:text="Orange"
         app:layout_constraintEnd_toStartOf="@+id/yellowBtn"
         app:layout_constraintStart_toEndOf="@+id/redBtn"
@@ -71,6 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="57dp"
         android:layout_marginEnd="41dp"
+        android:backgroundTint="#3E6765"
         android:text="Yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/colorText" />
@@ -81,6 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
         android:layout_marginTop="40dp"
+        android:backgroundTint="#3E6765"
         android:text="Green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/redBtn" />
@@ -92,6 +100,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#3E6765"
         android:text="Blue"
         app:layout_constraintEnd_toStartOf="@+id/purpleBtn"
         app:layout_constraintStart_toEndOf="@+id/greenBtn"
@@ -103,6 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="41dp"
+        android:backgroundTint="#3E6765"
         android:text="Purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yellowBtn" />

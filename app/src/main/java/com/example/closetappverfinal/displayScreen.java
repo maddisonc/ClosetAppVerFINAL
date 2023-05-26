@@ -20,7 +20,6 @@ public class displayScreen extends AppCompatActivity {
     private Button generateBtn;
 
     public static ImageView top;
-    private ImageView bottom;
 
     // list of all clothing items
     public static clothingObj[] clothing = new clothingObj[5];
@@ -40,8 +39,6 @@ public class displayScreen extends AppCompatActivity {
 
         // top clothing img
         top = findViewById(R.id.topItemImg);
-        // bottom clothing img
-        bottom = findViewById(R.id.btmItemImg);
 
         // adds clothing items
         clothingObj blank = new clothingObj("https://assets.vogue.com/photos/6362de6fa544f299722694f7/3:4/w_1280%2Cc_limit/slide_6.jpg", "Blank", "blank", "blank", "blank");
