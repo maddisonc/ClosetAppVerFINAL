@@ -28,11 +28,16 @@ public class displayScreen extends AppCompatActivity {
         // top clothing img
         top = findViewById(R.id.topItemImg);
         // bottom clothing img
-        top = findViewById(R.id.btmItemImg);
+        bottom = findViewById(R.id.btmItemImg);
 
+        // sets images
         Picasso.get()
                 .load("https://d1jyxxz9imt9yb.cloudfront.net/medialib/3078/image/s1300x1300/IP202207_GlassFrogs_009_365211_reduced.jpg")
                 .into(top);
+
+        Picasso.get()
+                .load("https://d1jyxxz9imt9yb.cloudfront.net/medialib/3078/image/s1300x1300/IP202207_GlassFrogs_009_365211_reduced.jpg")
+                .into(bottom);
 
         seeAllBtn.setOnClickListener(new View.OnClickListener() {
             @Override
