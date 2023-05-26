@@ -48,7 +48,7 @@ public class displayScreen extends AppCompatActivity {
         // default items
         clothingObj whiteTee = new clothingObj("https://assets.vogue.com/photos/6362de6fa544f299722694f7/3:4/w_1280%2Cc_limit/slide_6.jpg", "white shirt", "white", "casual", "hot");
         clothingObj blackTurtle = new clothingObj("https://agnesb-agnesb-com-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/35def61b5a038ab8ea769dd4818311cf1d8dead0_0528J155_000_1.jpeg", "black turtleneck", "black", "formal", "cold");
-        clothingObj blueJeans = new clothingObj("https://assets.vogue.com/photos/63038fd40924a50b0859dc21/3:4/w_1280%2Cc_limit/slide_4.jpg", "blue jeans", "blue", "casual", "warm");
+        clothingObj blueJeans = new clothingObj("https://assets.vogue.com/photos/63038fd40924a50b0859dc21/3:4/w_1280%2Cc_limit/slide_4.jpg", "blue jeans", "blue", "casual", "any");
         clothingObj redSlacks = new clothingObj("https://fxposed.co.uk/Images/No%20Watermark/Trousers/TRS-VELVET/TRS-JESS-RED/IMG_3621.JPG", "red slacks", "red", "formal", "any");
 
         clothing[0] = blank;
