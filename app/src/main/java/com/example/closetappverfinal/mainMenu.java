@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class mainMenu extends AppCompatActivity {
     private Button startBtn;
+    private Button colorTheoryBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +23,25 @@ public class mainMenu extends AppCompatActivity {
                 configureStartButton();
             }
         }); // next activity method
+
+        colorTheoryBtn = findViewById(R.id.toColorTheoryBtn);
+        colorTheoryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureColorTheoryButton();
+            }
+        }); // next activity method
     } // end onCreate
 
     public void configureStartButton ()
     {
         Intent intent = new Intent(this, inputScreen.class);
+        startActivity(intent);
+    } // end start button handler
+
+    public void configureColorTheoryButton ()
+    {
+        Intent intent = new Intent(this, colorTheoryScreen.class);
         startActivity(intent);
     } // end start button handler
 
