@@ -15,6 +15,9 @@
         android:theme="@style/Theme.ClosetAppVerFINAL"
         tools:targetApi="31">
         <activity
+            android:name=".learnAboutDressCodesCC"
+            android:exported="false" />
+        <activity
             android:name=".colorTheoryScreenFIX"
             android:exported="false" />
         <activity

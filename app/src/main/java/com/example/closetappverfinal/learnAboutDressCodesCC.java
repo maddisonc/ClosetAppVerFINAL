@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class dressCodesScreen extends AppCompatActivity {
+public class learnAboutDressCodesCC extends AppCompatActivity {
 
     // https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie
     private Button menuBtn;
@@ -46,12 +46,12 @@ public class dressCodesScreen extends AppCompatActivity {
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionHolderText);
         userDisplay.setText(
-                "Casual: informal and comfortable (Plain T-shirts, shorts)\n" +
-                "Semi-formal: office-wear (dress shirts, less formal dresses)\n" +
-                "Business Formal: formal wear for business events (matching pairs of suit jackets and pants/skirts)\n" +
-                "Business casual: slacks, khakis, dress shirts/blouses\n" +
-                "Black tie: weddings, proms, and formal dinners (floor length evening gowns, black tuxedos)\n" +
-                "White Tie: the most formal attire - implies that guests are socially distinguished (royals, celebrities)");
+                "\nCasual: informal and comfortable (Plain T-shirts, shorts)\n" +
+                        "\nSemi-formal: office-wear (dress shirts, less formal dresses)\n" +
+                        "\nBusiness Formal: formal wear for business events (matching pairs of suit jackets and pants/skirts)\n" +
+                        "\nBusiness casual: slacks, khakis, dress shirts/blouses\n" +
+                        "\nBlack tie: weddings, proms, and formal dinners (floor length evening gowns, black tuxedos)\n" +
+                        "\nWhite Tie: the most formal attire - implies that guests are socially distinguished (royals, celebrities)");
     } // end start button handler
 
 } // end dressCodes class
