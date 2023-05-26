@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9E2D5"
     tools:context=".splashScreen">
 
     <ImageView
-        android:id="@+id/btmItemImg"
+        android:id="@+id/splashImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

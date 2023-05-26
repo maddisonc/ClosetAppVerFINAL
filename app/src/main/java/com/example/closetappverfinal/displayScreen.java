@@ -57,8 +57,8 @@ public class displayScreen extends AppCompatActivity {
         generateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView userDisplay = (TextView)findViewById(R.id.displayTitle);
-                userDisplay.setText(" " + clothing[1].getColor() + " " + clothing[1].getWeather());
+//                TextView userDisplay = (TextView)findViewById(R.id.displayTitle);
+//                userDisplay.setText(" " + clothing[1].getColor() + " " + clothing[1].getWeather());
                 int temp = 0;
                 String color = filterScreen.getColorFilter();
                 String formality = filterScreen.getFormalityFilter();
