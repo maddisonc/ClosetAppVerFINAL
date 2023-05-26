@@ -2,35 +2,56 @@ package com.example.closetappverfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class dressCodesScreen extends AppCompatActivity {
 
     // https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie
-    String[] dressCodesList = {
-            "Casual: informal and comfortable (Plain T-shirts, shorts)\n",
-            "Semi-formal: office-wear (dress shirts, less formal dresses)\n",
-            "Business Formal: formal wear for business events (matching pairs of suit jackets and pants/skirts)\n",
-            "Business casual: slacks, khakis, dress shirts/blouses\n",
-            "Black tie: weddings, proms, and formal dinners (floor length evening gowns, black tuxedos)\n",
-            "White Tie: the most formal attire - implies that guests are socially distinguished (royals, celebrities)"};
+    private Button mainMenuBtn;
+    private Button dressCodesOutputBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dress_codes_screen);
-        fillScrollView();
+        mainMenuBtn = findViewById(R.id.mainMenuBtn);
+        mainMenuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureMainMenuButton();
+            }
+        }); // next activity method
+
+        dressCodesOutputBtn = findViewById(R.id.dressCodesOutputBtn);
+        dressCodesOutputBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureDressCodesButton();
+            }
+        }); // next activity method
+
     }
 
-    public void fillScrollView ()
+    public void configureMainMenuButton ()
     {
-        String output = "";
-        TextView dressCodes = (TextView) findViewById(R.id.scrollViewText);
-        for (String a : dressCodesList)
-        {
-            output += "\n" + a;
-        }
-        dressCodes.setText(output);
-    } // end fill method
+        Intent intent = new Intent(this, mainMenu.class);
+        startActivity(intent);
+    } // end start button handler
+
+    public void configureDressCodesButton ()
+    {
+        TextView userDisplay = (TextView)findViewById(R.id.descriptionHolderText);
+        userDisplay.setText(
+                "Casual: informal and comfortable (Plain T-shirts, shorts)\n" +
+                "Semi-formal: office-wear (dress shirts, less formal dresses)\n" +
+                "Business Formal: formal wear for business events (matching pairs of suit jackets and pants/skirts)\n" +
+                "Business casual: slacks, khakis, dress shirts/blouses\n" +
+                "Black tie: weddings, proms, and formal dinners (floor length evening gowns, black tuxedos)\n" +
+                "White Tie: the most formal attire - implies that guests are socially distinguished (royals, celebrities)");
+    } // end start button handler
+
 } // end dressCodes class

@@ -10,6 +10,7 @@ import android.widget.Button;
 public class mainMenu extends AppCompatActivity {
     private Button startBtn;
     private Button colorTheoryBtn;
+    private Button dressCodesBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,14 @@ public class mainMenu extends AppCompatActivity {
                 configureColorTheoryButton();
             }
         }); // next activity method
+
+        dressCodesBtn = findViewById(R.id.dressCodesBtn);
+        dressCodesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureDressCodesButton();
+            }
+        });
     } // end onCreate
 
     public void configureStartButton ()
@@ -42,6 +51,12 @@ public class mainMenu extends AppCompatActivity {
     public void configureColorTheoryButton ()
     {
         Intent intent = new Intent(this, colorTheoryScreenFIX.class);
+        startActivity(intent);
+    } // end start button handler
+
+    public void configureDressCodesButton ()
+    {
+        Intent intent = new Intent(this, dressCodesScreen.class);
         startActivity(intent);
     } // end start button handler
 
