@@ -90,32 +90,32 @@ public class colorTheoryScreen extends AppCompatActivity {
     public void configureRedButton ()
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
-        userDisplay.setText("The complimentary color of red is .");
+        userDisplay.setText("The complimentary color of red is green.");
     }
     public void configureOrangeButton ()
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
-        userDisplay.setText("The complimentary color of orange is .");
+        userDisplay.setText("The complimentary color of orange is blue.");
     }
     public void configureYellowButton ()
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
-        userDisplay.setText("The complimentary color of yellow is .");
+        userDisplay.setText("The complimentary color of yellow is purple.");
     }
     public void configureGreenButton ()
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
-        userDisplay.setText("The complimentary color of green is .");
+        userDisplay.setText("The complimentary color of green is magenta.");
     }
     public void configureBlueButton ()
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
-        userDisplay.setText("The complimentary color of blue is .");
+        userDisplay.setText("The complimentary color of blue is orange.");
     }
     public void configurePurpleButton ()
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
-        userDisplay.setText("The complimentary color of purple is .");
+        userDisplay.setText("The complimentary color of purple is yellow.");
     }
     public void configureMainButton ()
     {
