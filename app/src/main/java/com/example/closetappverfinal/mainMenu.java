@@ -41,7 +41,7 @@ public class mainMenu extends AppCompatActivity {
 
     public void configureColorTheoryButton ()
     {
-        Intent intent = new Intent(this, colorTheoryScreen.class);
+        Intent intent = new Intent(this, colorTheoryScreenFIX.class);
         startActivity(intent);
     } // end start button handler
 
