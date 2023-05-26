@@ -16,6 +16,7 @@ public class colorTheoryScreen extends AppCompatActivity {
     private Button greenBtn;
     private Button blueBtn;
     private Button purpleBtn;
+    private Button mainBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,15 @@ public class colorTheoryScreen extends AppCompatActivity {
                 configurePurpleButton();
             }
         });
+
+        mainBtn = findViewById(R.id.mainBtn);
+        mainBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                configureMainButton();
+            }
+        });
+
     }
 
     public void configureRedButton ()
@@ -106,6 +116,11 @@ public class colorTheoryScreen extends AppCompatActivity {
     {
         TextView userDisplay = (TextView)findViewById(R.id.descriptionTextView);
         userDisplay.setText("The complimentary color of purple is .");
+    }
+    public void configureMainButton ()
+    {
+        Intent intent = new Intent(this, mainMenu.class);
+        startActivity(intent);
     }
 
 } // end colorTheory class
