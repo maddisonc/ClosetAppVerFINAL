@@ -30,7 +30,7 @@ public class inputScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_screen);
 
-        // start button
+        // submit button
         submitBtn = findViewById(R.id.submitBtn);
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
