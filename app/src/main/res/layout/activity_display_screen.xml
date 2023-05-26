@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/seeAllBtn" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/topItemImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
@@ -54,7 +54,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/btmItemImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="65dp"
