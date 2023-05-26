@@ -43,23 +43,67 @@ public class clothingObj
 
     // setters
     public void setPicLink(String picLink) {
-        this.picLink = picLink;
+        // https://uibakery.io/regex-library/url
+        // most common types of links (starting with https and not starting with https)
+        if (picLink.matches("/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\." +
+                "[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/") ||
+                picLink.matches("/^[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\." + "[a-zA-Z0-9()]" +
+                        "{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$/"))
+        {
+            this.picLink = picLink;
+        }
+        else
+        {
+            picLink = "invalid url";
+        }
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String name)
+    {
+        if (name.matches("[ A-Za-z]"))
+        {
+            this.name = name;
+        }
+        else
+        {
+            name = "invalid name";
+        }
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String color)
+    {
+        if (color.matches("[ A-Za-z]"))
+        {
+            this.color = color;
+        }
+        else
+        {
+            color = "invalid color";
+        }
     }
 
-    public void setFormality(String formality) {
-        this.formality = formality;
+    public void setFormality(String formality)
+    {
+        if (formality.matches("[ A-Za-z]"))
+        {
+            this.formality = formality;
+        }
+        else
+        {
+            formality = "invalid level of formality";
+        }
     }
 
-    public void setWeather(String weather) {
-        this.weather = weather;
+    public void setWeather(String weather)
+    {
+        if (weather.matches("[ A-Za-z]"))
+        {
+            this.weather = weather;
+        }
+        else
+        {
+            weather = "invalid weather type";
+        }
     }
 
     // toString
