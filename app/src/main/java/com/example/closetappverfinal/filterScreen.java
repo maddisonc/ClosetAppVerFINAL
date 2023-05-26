@@ -12,19 +12,27 @@ public class filterScreen extends AppCompatActivity {
 
     private Button submitBtn;
 
-    // stores filters
-    public static String color;
-    public static String formality;
-    public static String weather;
-
     private EditText colorInput;
     private EditText formalityInput;
     private EditText weatherInput;
+
+    // stores actual values of inputs
+    public static String colorVal;
+    public static String formalVal;
+    public static String weatherVal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter_screen);
+
+        colorInput = findViewById(R.id.colorInput);
+        formalityInput = findViewById(R.id.formalityInput);
+        weatherInput = findViewById(R.id.weatherInput);
+
+        colorVal = colorInput.getText().toString();
+        formalVal = formalityInput.getText().toString();
+        weatherVal= weatherInput.getText().toString();
 
         // submit button
         submitBtn = findViewById(R.id.submitBtn);
@@ -34,24 +42,20 @@ public class filterScreen extends AppCompatActivity {
                 configureSubmitButton();
             }
         }); // next activity method
-
-        colorInput = findViewById(R.id.colorInput);
-        formalityInput = findViewById(R.id.formalityInput);
-        weatherInput = findViewById(R.id.weatherInput);
     } // end onCreate
 
     // getters
     public static String getColorFilter()
     {
-        return color;
+        return colorVal;
     }
     public static String getFormalityFilter()
     {
-        return formality;
+        return formalVal;
     }
     public static String getWeatherFilter()
     {
-        return weather;
+        return weatherVal;
     }
 
     public void configureSubmitButton ()

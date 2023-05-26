@@ -63,5 +63,17 @@
         app:layout_constraintTop_toBottomOf="@+id/displayTitle"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="135dp"
+        android:text="generate outfit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backToMain" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
